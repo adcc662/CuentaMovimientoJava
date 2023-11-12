@@ -24,25 +24,25 @@ A partir de este punto despues de correr el microservicio solo se debe usar `doc
 **Datos para la API**
 
 ```sh
-   /cuentas
+   localhost:8081/cuentas
 {
   "numeroCuenta": "1234567890",
   "tipoCuenta": "Ahorros",
   "saldoInicial": 1000.00,
   "estado": true,
   "cliente": {
-    // Asumiendo que el cliente ya existe y que solo necesitas referenciar su ID o algún identificador único
+    // Asumiendo que el cliente ya existe
     "id": 1
   }
   
-  /movimientos
+  localhost:8081/movimientos
 {
   "fecha": "2023-01-01T12:00:00Z",
   "tipoMovimiento": "Deposito",
   "valor": 200.00,
   "saldoDespuesMovimiento": 1200.00,
   "cuenta": {
-    // Asumiendo que la cuenta ya existe y que solo necesitas referenciar su ID
+    // Asumiendo que la cuenta ya existe
     "id": 1
   }
 
